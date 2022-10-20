@@ -1,6 +1,5 @@
 #pragma once
 #include <string>
-#include <iostream>
 
 template <typename T>
 class tem 
@@ -51,7 +50,7 @@ private:
 public:
 	bool wpisywanieParametrow(int wersja, T* probka, int gora, int dol)
 	{
-		int wprowadzone = test(1);
+		int wprowadzone = test(wersja);
 		if (sprawdzPrzedzial(wprowadzone, gora, dol) == false)
 		{
 			return false;
